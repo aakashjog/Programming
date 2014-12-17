@@ -6,17 +6,19 @@ int main(void)
 {
 	int num = 0;
 
-	printf("Please enter a number.\n");
+	printf("Please enter a number.\t");
 	scanf("%d", &num);
 
 	if(num == 1)
 	{
 		printf("1 is a unique number.\n");
 	}
+	else
+	{
+		printf("The prime factors of %d are\n", num);
 
-	printf("The prime factors of %d are\n", num);
-
-	factor_rec(num); //Passes the number to the function for factorization.
+		factor_rec(num); //Passes the number to the function for factorization.
+	}
 
 	printf("\n");
 
