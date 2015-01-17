@@ -56,7 +56,7 @@ int main(void)
 	printf("\n%d students failed:\n", number_of_failed_students);
 	for(i = 0; i < number_of_failed_students; i++)
 	{
-		printf("%s\n", names[i]);
+		printf("%s\n", failed[i]);
 	}
 
 	return 0;
